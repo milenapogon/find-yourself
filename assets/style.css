@@ -5,13 +5,15 @@
 
 .main {
     width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.822), url(women.jpg.jpg));
+    background: url(women.jpg.jpg) 50% 50%;
     background-position: center;
     background-size: cover;
 }
+
 .navbar {
+    
     width: 100%;
-    height: 50px;
+    height: 10px;
     margin: auto;
 }
 .icon {
@@ -22,11 +24,12 @@
 }
 .logo {
     color: blueviolet;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Arial;
+    font-weight: bold;
     padding-left: 20px;
     float: left;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 .menu {
     width: 100%;
@@ -53,4 +56,22 @@ ul li a {
 }
 ul li a:hover {
     color:blueviolet;
+}
+.content {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    color: black;
+}
+.content h1 {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 50px;
+    margin-top: 40%;
+}
+.content p {
+    font-family:'Franklin Gothic Medium';
+    font-size: 25px;
+    padding-left: 100px;
+    padding-bottom: 25px;
 }
