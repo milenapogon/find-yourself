@@ -9,13 +9,12 @@ header {
     padding: 20px;
     background-color: black;
     color: white;
-    width: 100%;
+    width: 1375px;
     margin: 0 auto;
-    box-shadow: 0;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    position: fixed;
+    position: relative;
     top: 0;
 }
 .navbar {
@@ -67,6 +66,7 @@ ul li a:hover {
     color:blueviolet;
 }
 .hero {
+    position: relative;
     background: white;
 }
 .hero-container {
@@ -74,9 +74,10 @@ ul li a:hover {
 }
 .hero-image {
     position: absolute;
-    top: 75px;
+    top: 12%;
     left: 0;
-    width: 700px;
+    margin: 0 auto;
+    width: 800px;
     height: 30%;
     background-position: center;
     background-size: cover;
@@ -102,6 +103,41 @@ ul li a:hover {
     padding-left: 100px;
     padding-bottom: 25px;
 }
+.head {
+    background-color: black;
+    color: white;
+    width: auto;
+}
+.head h2, p {
+    font-family:'Courier New';
+    text-align: center;
+    font-size: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.head h2 {
+    font-size:25px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1375px;
+    margin: 20px auto;
+}
+article p, article h2 {
+    margin: 20px 10px;
+    text-align: center;
+}
+article li {
+    list-style-type: square;
+    padding-left: 12rem;
+    list-style-position: inside;
+    font-size: 20px;
+
+}
 /* Footer */
 #social-networks {
     position: fixed;
@@ -120,3 +156,4 @@ ul li a:hover {
     padding: 0;
     color: white;
 }
+
