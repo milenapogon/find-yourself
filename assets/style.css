@@ -15,7 +15,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    
+    position: fixed;
+    top: 0;
 }
 .navbar {
     width: 100%;
@@ -72,8 +73,11 @@ ul li a:hover {
     display: flex;
 }
 .hero-image {
-    width: 1000px;
-    height: 550px;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 700px;
+    height: 30%;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -100,6 +104,8 @@ ul li a:hover {
 }
 /* Footer */
 #social-networks {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     background-color: black;
     text-align: center;
