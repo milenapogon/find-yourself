@@ -8,14 +8,16 @@
 header {
     padding: 20px;
     background-color: black;
-    color: white;
+    color: blueviolet;
     width: 100%;
     margin: 0 auto;
-    display: flex;
     justify-content: space-between;
     align-items: baseline;
     position: relative;
     top: 0;
+    font-size: 24px;
+    font-family: 'fantasy';
+    font-weight: bold;
 }
 .navbar {
     width: 100%;
@@ -30,11 +32,12 @@ header {
 }
 .logo {
     color: blueviolet;
-    font-size: 25px;
-    font-family: Arial;
+    font-size: 30px;
+    font-family: 'fantasy';
     font-weight: bold;
-    padding: 0 auto;
+    padding: 2px auto;
     float: left;
+    
 }
 .menu {
     width: 50%;
@@ -68,29 +71,31 @@ header {
 .hero {
     position: relative;
     background: white;
+    width: 100vw;
+    height: 100vh;
 }
 .hero-container {
     display: flex;
 }
 .hero-image {
     position: absolute;
-    top: 12%;
+    top: 0;
     left: 0;
     margin: 0 auto;
-    width: 800px;
-    height: 30%;
-    background-position: center;
+    width: 66vw;
+    background-position: top left;
     background-size: cover;
-    position: relative;
+    float: left;
 
 }
 .content {
+    position: absolute;
     width: 50%;
     height: auto;
     margin: 40px;
-    position: relative;
     color: black;
     text-align: center;
+    right: 0;
 }
 .content h1 {
     font-family: 'Franklin Gothic Medium';
@@ -106,7 +111,7 @@ header {
 
 .head {
     background-color: black;
-    color: white;
+    color: rgb(225, 0, 255);
     width: auto;
 }
 .head h2, p {
@@ -139,6 +144,12 @@ article ol li {
     list-style-position: inside;
     font-size: 20px;
     font-family: 'Verdana';
+}
+article img {
+    width: 70%;
+    float: right;
+    background-size: cover;
+
 }
 /* Footer */
 #social-networks {
