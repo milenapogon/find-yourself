@@ -9,7 +9,7 @@ header {
     padding: 20px;
     background-color: black;
     color: white;
-    width: 1375px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -41,18 +41,18 @@ header {
     float: right;
     height: 20px;
 }
-ul {
+.menu ul {
     float: right;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-ul li {
+.menu ul li {
     list-style: none;
     margin: 2px auto;
     font-size: 16px;
 }
-ul li a {
+.menu ul li a {
     text-decoration: none;
     font-family: Arial;
     font-weight: bold;
@@ -62,7 +62,7 @@ ul li a {
     margin: 2px auto;
     padding: 10px;
 }
-ul li a:hover {
+.menu ul li a:hover {
     color:blueviolet;
 }
 .hero {
@@ -103,6 +103,7 @@ ul li a:hover {
     padding-left: 100px;
     padding-bottom: 25px;
 }
+
 .head {
     background-color: black;
     color: white;
@@ -123,20 +124,21 @@ ul li a:hover {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
     max-width: 1375px;
     margin: 20px auto;
 }
 article p, article h2 {
-    margin: 20px 10px;
+    margin: 10px 20px;
     text-align: center;
 }
-article li {
+article ol li {
+    text-align: center;
     list-style-type: square;
-    padding-left: 12rem;
+    padding-left: 0;
     list-style-position: inside;
     font-size: 20px;
-
+    font-family: 'Verdana';
 }
 /* Footer */
 #social-networks {
@@ -145,7 +147,7 @@ article li {
     width: 100%;
     background-color: black;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
