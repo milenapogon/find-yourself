@@ -83,7 +83,7 @@ header {
     left: 0;
     margin: 0 auto;
     width: 70vw;
-    height: 80vh;
+    height: 100vh;
     background-position: top left;
     background-size: cover;
     float: left;
@@ -93,7 +93,7 @@ header {
     position: absolute;
     width: 50%;
     height: auto;
-    margin: 50px;
+    margin: 30px;
     color: black;
     text-align: center;
     right: 0;
@@ -101,7 +101,7 @@ header {
 .content h1 {
     font-family: 'Franklin Gothic Medium';
     font-size: 50px;
-    margin-top: 25%;
+    margin-top: 30%;
 }
 .content p {
     font-family:'Franklin Gothic Medium';
@@ -183,11 +183,18 @@ article img {
     padding-top: 60px auto;
     padding-bottom: 80px auto;
 }
+
 .item {
-    width: 50%;
+    width: 45%;
 }
 .item h2 {
     margin: 0 auto;
+}
+.item h2, p{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .item.left {
     grid-column-start: 1;
