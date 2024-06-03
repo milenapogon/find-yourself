@@ -130,32 +130,45 @@ header {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
+    gap: 20px;
     width: 100%;
-    margin: 5px auto;
+    margin: 0 auto;
     text-align: center;
-}
-article h2, p {
-    font-size: 22px;
     padding: 0 auto;
+    background-color: rgba(160, 32, 160, 0.671);
+}
+article p {
+    font-size: 22px;
+    padding: 100px auto;
     margin: 0 auto;
     text-align: center;
 }
+article h2 {
+    margin-top: 25%;
+    font-size: 24px;
+    text-align: center;
+}
+
 article ul, li {
     width: auto;
     list-style-type: disc;
-    list-style-position: inside;
+    list-style-position: outside;
     display: inline-block;
     text-align: center;
     top: 0;
-    
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20px;
+    margin: 5px auto;
+    padding-left: 10px auto;
+    padding-right: 10px auto;
 
 }
 article img {
     width: auto;
-    height: 60vh;
+    height: 80vh;
     position: relative;
     background-position: center;
+    padding: 0 auto;
     
 }
 
@@ -163,23 +176,32 @@ article img {
     display: grid;
     grid-template-columns: auto auto;
     grid-auto-flow: dense;
-    gap: 5px;
+    gap: 10px;
     width: auto;
-    margin-left: 5px auto;
+    margin: 20px auto;
     text-align: center;
+    padding-top: 60px auto;
+    padding-bottom: 80px auto;
 }
 .item {
     width: 50%;
+}
+.item h2 {
+    margin: 0 auto;
 }
 .item.left {
     grid-column-start: 1;
     float: left;
     justify-self: start;
+    padding: 10px auto;
+    margin: 10px auto;
 }
 .item.right {
     grid-column-start: 2;
     float: right;
     justify-self: start;
+    padding: 10px auto;
+    margin: 10px auto;
 }
 
 
