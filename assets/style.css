@@ -141,9 +141,9 @@ article h2, p {
     margin: 0 auto;
     text-align: center;
 }
-article ol, li {
+article ul, li {
     width: auto;
-    list-style-type: square;
+    list-style-type: disc;
     list-style-position: inside;
     display: inline-block;
     text-align: center;
@@ -159,31 +159,29 @@ article img {
     
 }
 
-.herbs {
+.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    grid-auto-flow: dense;
     gap: 5px;
-    width: 70%;
+    width: auto;
     margin-left: 5px auto;
     text-align: center;
 }
-.herbs h2, p {
-    text-align: center;
-    font-size: 22px;
-    padding: 0 auto;
-    margin: 0 auto;
-    font-weight: bold;
-
-
+.item {
+    width: 50%;
 }
-.herbs ul, li {
-    width: auto;
-    list-style-type: none;
-    list-style-position: inside;
-    font-size: 20px;
-    display: inline;
-    text-align: center;
+.item.left {
+    grid-column-start: 1;
+    float: left;
+    justify-self: start;
 }
+.item.right {
+    grid-column-start: 2;
+    float: right;
+    justify-self: start;
+}
+
 
 span {
     font-size: 22px;
