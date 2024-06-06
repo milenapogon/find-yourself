@@ -242,17 +242,18 @@ span {
 
 #signup-form {
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.692);
+    background-color: rgba(0, 0, 0, 0.76);
     padding: 30px;
 }
 
 #signup-form>h2 {
-    color: #fafafa;
+    color: rgba(160, 32, 160);
     margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium';
 }
 
 .text-input {
-    background: transparent;
+    background-color: rgba(0, 0, 0, 0.76);
     color: #fafafa;
     width: 100%;
     height: 25px;
@@ -260,6 +261,7 @@ span {
     border: 1px solid #fafafa;
     border-radius: 2px;
     padding: 0 5px;
+    font-family: 'Franklin Gothic Medium';
 }
 
 .join-button {
@@ -274,8 +276,10 @@ span {
 /* Contact form */
    input[type=text], select, textarea {
     width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.76);
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -283,20 +287,32 @@ span {
     resize: vertical;
    }
    input[type=submit] {
-    background-color: rgb(225, 0, 255);
-    color: white;
-    padding: 12px 20px;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: rgb(225, 0, 255);
+    padding: 16px 30px;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium' ;
     border: none;
     border-radius: 4px;
     cursor: pointer;
    }
    input[type=submit]:hover {
-    background-color: aqua;
+    background-color: whitesmoke;
    }
    .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-image: url(./images/motivation.jpg);
+    background-size: cover;
+    background-position: 100%;
+    padding: 40px 10% 22px 10%;
+    margin-bottom: 0 auto;
+    flex-grow: 1;
+   }
+   label {
+    font-size: 20px;
+    color: white;
+    font-family:'Franklin Gothic Medium' ;
+    font-weight: bold;
    }
 
 /* Footer */
