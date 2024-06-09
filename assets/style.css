@@ -170,12 +170,13 @@ section {
 }
 article p {
     font-size: 22px;
-    padding: 100px auto;
-    margin: 0 auto;
+    padding: 50px auto;
+    margin: 0;
     text-align: center;
 }
 article h2 {
-    margin-top: 25%;
+    margin: 20%;
+    padding: 5px 5px;
     font-size: 24px;
     text-align: center;
 }
@@ -189,27 +190,21 @@ article ul, li {
     top: 0;
     font-family: 'Franklin Gothic Medium';
     font-size: 20px;
-    margin: 5px auto;
-    padding-left: 10px auto;
-    padding-right: 10px auto;
+    margin: 5px 5px;
+    padding: 5px 10px;
 
 }
 .benefits {
-
     justify-self: start;
-    width: 100%;
-    height: 80vh;
+    width: 80%;
+    height: 100vh;
     color: white;
     background-color: rgba(0, 0, 0, 0.76);
-    padding: 0 auto;
-    border: 1px solid rgb(0, 0, 0);
+    padding: 5px 5px;
+    margin: 10% auto;
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
-    top: 0;
-    bottom: 0;
-    margin-top: 40px; 
-    margin-bottom: 40px;
 
 }
 .benefits ul, li {
@@ -221,23 +216,21 @@ article ul, li {
     top: 0;
     font-family: 'Franklin Gothic Medium';
     font-size: 20px;
-    margin: 5px auto;
+    margin: 5px 5px;
     padding-left: 10px auto;
     padding-right: 10px auto;
 }
-.benefits li i {
-    justify-content: space-between;
-}
+
 article img {
-    width: 50%;
+    width: 100%;
     height: 100%;
     position: relative;
     background-position: center;
-    padding: 0;
+    align-items: center;
+    padding: 10px auto;;
     z-index: inherit;
     display: inline-block;
-    margin-top: 20px;
-    margin-bottom: auto;
+    margin: 15% auto;
 }
 /* Second grid section */
 .grid {
@@ -253,6 +246,7 @@ article img {
 
 .item {
     top:0;
+    bottom: 20px;
     width: 45%;
 }
 .item h2 {
@@ -268,32 +262,32 @@ article img {
     grid-column-start: 1;
     float: left;
     justify-self: start;
-    width: 40%;
+    width: 50%;
+    height: 100%;
     color: white;
     background-color: rgba(0, 0, 0, 0.76);
-    padding: 12px;
-    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    padding-bottom: 30px;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-bottom: 16px;
-    margin-left: 14px;
+    margin: 5px auto;
     resize: vertical;
 }
 .item.right {
     grid-column-start: 2;
     float: right;
     justify-self: start;
-    width: 40%;
+    width: 50%;
+    height: 90%;
     color: white;
     background-color: rgba(0, 0, 0, 0.76);
-    padding: 12px;
-    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    padding-bottom: 50px;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    margin-left: 14px;
+    margin: 5px auto;
     resize: vertical;
+
 }
 
 
@@ -304,10 +298,11 @@ span {
 }
 /* Sign up form */
 #signup {
+    height: 100vh;
     background-image: url(./images/tea.jpg.jpg);
     background-size: cover;
     background-position: 100%;
-    padding: 40px 10% 10% 10%;
+    padding: 10% 10%;
     flex-grow: 1;
 
 }
@@ -315,13 +310,20 @@ span {
 #signup-form {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.76);
-    padding: 30px;
+    padding: 5% 5%;
 }
 
-#signup-form>h2 {
-    color: rgba(160, 32, 160);
+#signup-form > h2 {
+    color: rgb(196, 13, 156);
     margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium';
+}
+#signup-form > label {
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+        font-family:'Franklin Gothic Medium' ;
+        font-weight: bold;
+
 }
 
 .text-input {
@@ -330,8 +332,8 @@ span {
     width: 100%;
     height: 25px;
     margin: 5px 0 20px 0;
-    border: 1px solid #fafafa;
-    border-radius: 2px;
+    border: 1px solid #000000;
+    border-radius: 4px;
     padding: 0 5px;
     font-family: 'Franklin Gothic Medium';
 }
@@ -339,7 +341,7 @@ span {
 .join-button {
     margin-top: 20px;
     border-radius: 2px;
-    padding: 15px 32px;
+    padding: 15px 30px;
     font-size: 100%;
     background-color: rgba(160, 32, 160, 0.815);
     color: #fafafa;
@@ -350,8 +352,8 @@ span {
     width: 100%;
     color: white;
     background-color: rgba(0, 0, 0, 0.76);
-    padding: 12px;
-    border: 1px solid white;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -372,17 +374,18 @@ span {
     background-color: whitesmoke;
    }
    .container {
-    border-radius: 5px;
+    width: 100%;
+    height: 100vh;
     background-image: url(./images/motivation.jpg);
     background-size: cover;
     background-position: 100%;
-    padding: 40px 10% 22px 10%;
+    padding: 5% 20%;
     margin-bottom: 0 auto;
-    flex-grow: 1;
+    flex-grow: 1;   
    }
    label {
-    font-size: 20px;
-    color: white;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
     font-family:'Franklin Gothic Medium' ;
     font-weight: bold;
    }
@@ -393,9 +396,10 @@ span {
     text-align: center;
     background-image: url(./images/mountain.jpg);
     width: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: 100%;
-    padding: 40px 10% 22px 10%;
+    padding: 5% 10%;
     margin-bottom: 0 auto;
     flex-grow: 1;
 }
@@ -403,17 +407,18 @@ span {
 .about h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: white;
 }
  
 .about p {
     font-size: 1rem;
-    color: #000000;
+    color: #ffffff;
     max-width: 800px;
     margin: 0 auto;
 }
  
 .about-info {
-    margin: 2rem 2rem;
+    margin: 5% 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,13 +438,10 @@ span {
     color: white;
     background-color: rgba(0, 0, 0, 0.76);
     padding: 12px;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
     box-sizing: border-box;
     float: right bottom;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    margin-left: 14px;
     resize: vertical;
 }
 .more li i {
