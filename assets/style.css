@@ -8,21 +8,12 @@
 header {
     padding: 20px;
     background-color: black;
-    color: rgb(160, 32, 160);
     position: fixed;
     top: 0;
     width: 100%;
     text-align: center;
-    padding: 10px;
     display: flex;
     z-index: 99;
-    list-style-type: none;
-    margin-top: auto;
-    justify-content: space-between;
-    align-items: baseline;
-    font-size: 24px;
-    font-family: 'fantasy';
-    font-weight: bold;
 }
 
 body {
@@ -34,8 +25,13 @@ body {
 }
 main {
     flex: 1;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+div {
+    flex-basis: 100%;
+  }
 /* Navigation Bar */
 .navbar {
     width: 100%;
@@ -45,16 +41,24 @@ main {
 .icon {
     width: 200px;
     float: left;
-    height: 70px;
-
+    left: 0;
+    font-size: 24px;
+    height: 80px;
+    color: rgb(196, 13, 156);
 }
 .logo {
-    color: blueviolet;
-    font-size: 30px;
+    color: rgb(196, 13, 156);
+    font-size: 26px;
     font-family: 'Georgia';
     font-weight: bold;
-    padding: 2px auto;
-    float: left;
+    padding: 10px;
+    list-style-type: none;
+    margin-top: auto;
+    justify-content: space-between;
+    align-items: baseline;
+    display: inline-block;
+    font-family: 'fantasy';
+    font-weight: bold;
     
 }
 /* Menu */
@@ -85,7 +89,7 @@ main {
     padding: 10px;
 }
 .menu ul li a:hover {
-    color:blueviolet;
+    color: rgb(196, 13, 156);
 }
 /* Hero section */ 
 .hero {
@@ -96,7 +100,9 @@ main {
     z-index: 1;
 }
 .hero-container {
+    width: 100%;
     display: flex;
+    flex-basis: 100%;
     position: relative;
 }
 .hero-image {
@@ -104,12 +110,11 @@ main {
     top: 20px;
     left: 0;
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-position: left;
+    background-position: center;
     background-size: cover;
-    float: left;
-
+    flex-basis: 100%;
 }
 /* Header text content*/
 .content {
@@ -152,11 +157,6 @@ main {
 .head h2 {
     font-size: 25px;
 }
-/* Section */
-section {
-    width: 100%;
-}
-
 
 /* Frist grid section */
 .grid-container {
@@ -166,22 +166,22 @@ section {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 0 auto;
+    padding: 0;
 }
-article p {
+.benefits p {
     font-size: 22px;
-    padding: 50px auto;
+    padding: 30px;
     margin: 0;
     text-align: center;
 }
-article h2 {
+.benefits h2 {
     margin: 20%;
     padding: 5px 5px;
     font-size: 24px;
     text-align: center;
 }
 
-article ul, li {
+.benefits ul, li {
     width: auto;
     list-style: none;
     list-style-position: inside;
@@ -197,14 +197,13 @@ article ul, li {
 .benefits {
     justify-self: start;
     width: 80%;
-    height: 100vh;
+    height: 100%;
     color: white;
     background-color: rgba(0, 0, 0, 0.76);
     padding: 5px 5px;
-    margin: 10% auto;
-    border-radius: 4px;
-    box-sizing: border-box;
+    margin: 5% auto;
     resize: vertical;
+    bottom: 0;
 
 }
 .benefits ul, li {
@@ -217,37 +216,43 @@ article ul, li {
     font-family: 'Franklin Gothic Medium';
     font-size: 20px;
     margin: 5px 5px;
-    padding-left: 10px auto;
-    padding-right: 10px auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-article img {
+.img {
     width: 100%;
     height: 100%;
     position: relative;
     background-position: center;
     align-items: center;
-    padding: 10px auto;;
+    padding: 0;
     z-index: inherit;
     display: inline-block;
-    margin: 15% auto;
+    margin: 15% 0;
 }
 /* Second grid section */
-.grid {
+.ideas {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-auto-flow: dense;
     gap: 5px;
     width: 100%;
+    height: 100%;
     text-align: center;
-    padding: 40px auto;
+    padding: 5% 10%;
     margin: 5px auto;
+    background-color: rgba(0, 0, 0, 0.76);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+
 }
 
 .item {
     top:0;
     bottom: 20px;
-    width: 45%;
+    width: 100%;
 }
 .item h2 {
     margin: 0 auto;
@@ -258,36 +263,29 @@ article img {
     margin-left: 20px;
     margin-right: 20px;
 }
-.item.left {
+.ideas item-left {
     grid-column-start: 1;
     float: left;
     justify-self: start;
     width: 50%;
     height: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.76);
     padding: 20px;
     padding-bottom: 30px;
-    border-radius: 4px;
-    box-sizing: border-box;
     margin: 5px auto;
     resize: vertical;
 }
-.item.right {
+.ideas item-right {
     grid-column-start: 2;
     float: right;
     justify-self: start;
     width: 50%;
     height: 90%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.76);
     padding: 20px;
     padding-bottom: 50px;
-    border-radius: 4px;
-    box-sizing: border-box;
     margin: 5px auto;
     resize: vertical;
-
 }
 
 
@@ -380,12 +378,12 @@ span {
     background-size: cover;
     background-position: 100%;
     padding: 5% 20%;
-    margin-bottom: 0 auto;
+    margin-bottom: auto;
     flex-grow: 1;   
    }
    label {
     font-size: 22px;
-    color: rgb(0, 0, 0);
+    color: white;
     font-family:'Franklin Gothic Medium' ;
     font-weight: bold;
    }
@@ -400,7 +398,7 @@ span {
     background-size: cover;
     background-position: 100%;
     padding: 5% 10%;
-    margin-bottom: 0 auto;
+    margin-bottom: auto;
     flex-grow: 1;
 }
  
@@ -441,7 +439,6 @@ span {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
     box-sizing: border-box;
-    float: right bottom;
     resize: vertical;
 }
 .more li i {
@@ -465,4 +462,21 @@ span {
     padding: 0;
     color: white;
 }
+@media screen (max-width: 600px) {
+    main {
+      flex-wrap: nowrap;
+    }
 
+    div {
+      flex-basis: 33%;
+    }
+    .menu {
+        width: 20%;
+    }
+    .hero-image, .hero-container {
+        flex-basis: 33%;
+    }
+    head {
+        width: 100%;
+    }
+}
