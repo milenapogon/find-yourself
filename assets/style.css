@@ -95,26 +95,28 @@ div {
 .hero {
     position: relative;
     background: white;
-    width: 100%;
+    min-width: 100%;
     height: 100vh;
     z-index: 1;
+    margin-right: auto;
 }
 .hero-container {
     width: 100%;
     display: flex;
-    flex-basis: 100%;
     position: relative;
+    margin-right: auto;
 }
 .hero-image {
     position: relative;
     top: 20px;
-    left: 0;
     margin: 0 auto;
     width: 100vw;
     height: 100vh;
     background-position: center;
     background-size: cover;
-    flex-basis: 100%;
+    align-items: center;
+    object-fit: cover;
+    margin: 0;
 }
 /* Header text content*/
 .content {
@@ -139,13 +141,15 @@ div {
 /* Head */
 .head {
     position: relative;
-    z-index: inherit;
+    z-index: 99;
     display: inline-block;
     background-color: black;
     color: rgb(225, 0, 255);
     width: 100%;
     top: 20px;
-    margin-top: auto;
+    margin-right: 0;
+    padding: auto;
+    object-fit: cover;
 }
 .head h2, p {
     font-family:'Georgia';
@@ -157,7 +161,9 @@ div {
 .head h2 {
     font-size: 25px;
 }
-
+section {
+    width: 100%;
+}
 /* Frist grid section */
 .grid-container {
     display: grid;
@@ -462,21 +468,5 @@ span {
     padding: 0;
     color: white;
 }
-@media screen (max-width: 600px) {
-    main {
-      flex-wrap: nowrap;
-    }
 
-    div {
-      flex-basis: 33%;
-    }
-    .menu {
-        width: 20%;
-    }
-    .hero-image, .hero-container {
-        flex-basis: 33%;
-    }
-    head {
-        width: 100%;
-    }
-}
+ 

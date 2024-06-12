@@ -1,39 +1,68 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Find Yourself 
+<p align="center"><img src="" alt="" width="600"/></p>
 
-Welcome,
+# Introduction
+# Find Yorself
+### The Find Yourself project is created for people who want to change their lives by changing their thinking, but don't know how to start. There are some valuable tips that you can use and get started!
+### My Project exists because I know that many people have problems with positive thinking and lack of motivation for their dreams. I am trying to share my knowledge that can help many people.
+### The Find Youself website is intended for everyone of all ages who wants to learn the secrets of self-motivation and relax.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Features
+**Navbar**
+- Featured at the top of the page, The navigation shows page name and logo in the left corner that links to the top of the page.
+- The other navigation links, menu shows on the right: Home, About Us, Sign Up and Contact which link to the different sections of the page.
+- Navigation is in a most suitable font and deep pink color which do beautiful contrast with black background, that makes the web comfy look and easy to read.
+- The navigation clearly tells the user name of the website and makes all the information sections easy to find, it also allows to navigate seamlessly between pages on all devices without needing to use 'back' button.
+<details><summary>Navbar Screenshot</summary>
+<p align="center"><img src="" alt="" width="600"/></p>
+</details>
+<hr>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+**Header**
+- The header shows photo showing a women practicing yoga and wonderful quote by Sherman Finesilver which is great website header.
+- The quote motivates us to act and makes interested in continuing to read the rest of page.
+<details><summary>Header Screenshot</summary>
+<p align="center"><img src="" alt="drawing" width="600"/></p>
+</details>
+<hr>
 
-## Codeanywhere Reminders
+**About Us section**
+- The About Us section presents the mission, description and message of creating the website.
+- About Us section shows clearly important information about provides an address, phone number and email address
+<details><summary>About Us Screenshot</summary>
+<p align="center"><img src="" alt="" width="600"/></p>
+</details>
+<hr>
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+**Sign Up section**
+- Sign Up section has a form to collect information from users so they can sign up to the Find Yorself web.
+- The form collects users First name, Surename and Email address.
+- The Sign Up form is valuable to the users by gives ability to sign up to join Find Yourself community.
+<details><summary>Sign Up Screenshot</summary>
+<p align="center"><img src="" alt="" width="600"/></p>
+</details>
+<hr>
 
-`python3 -m http.server`
+**Contact section**
+- Contact section includes a form to collect answers, First name and Surename, users can ask about everything what they what to know.
+- The Contact section is made with designed for easy acces and simple information.
+- The Contact section is valuable to the users as it gives them the ability to find and contact company if they need to.
+<details><summary>Contact Screenshot</summary>
+<p align="center"><img src="" alt="" width="600"/></p>
+</details>
+<hr>
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+**Footer**
+- The Footer section includes links to the relevant social media sites, like Facebook, Instagram, Youtube and Twitter for Find Yourself website.
+- Footer links will open in a new tab to allow easy navigation for the user.
+- The Footer is also valuable to the user as it encourages them to keep connected via social media.
+<details><summary>Footer Screenshot</summary>
+<p align="center"><img src="" alt="" width="600"/></p>
+</details>
+<hr>
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+**Bugs**
+### Solved bugs
+-
 
-`http_server`
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
