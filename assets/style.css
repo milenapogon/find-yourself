@@ -11,9 +11,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    text-align: center;
     display: flex;
     z-index: 99;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 body {
@@ -33,10 +34,11 @@ div {
     flex-basis: 100%;
   }
 /* Navigation Bar */
-.navbar {
-    width: 100%;
-    height: 30px;
-    margin: 0 auto;
+nav {
+    width: 50%;
+    float: right;
+    color: white;
+    font-family: 'Arial';
 }
 .icon {
     width: 200px;
@@ -62,40 +64,38 @@ div {
     
 }
 /* Menu */
-.menu {
-    width: 50%;
+#menu {
+    font-size: 50%;
+    letter-spacing: 4px;
+    list-style-type: none;
     float: right;
-    height: 20px;
+      
+
 }
-.menu ul {
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.menu ul li {
-    list-style: none;
-    margin: 2px auto;
-    font-size: 16px;
-}
-.menu ul li a {
+#menu > ul {
     text-decoration: none;
     font-family: Arial;
     font-weight: bold;
     color: white;
     display: block;
-    justify-content: space-between;
-    margin: 2px auto;
-    padding: 10px;
+    justify-content: center;
 }
-.menu ul li a:hover {
+.nav-toggle-label {
+    display: none;
+    color: white;
+}
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+#menu > ul a:hover {
     color: rgb(196, 13, 156);
 }
 /* Hero section */ 
 .hero {
     position: relative;
     background: white;
-    min-width: 100%;
+    width: 100%;
     height: 100vh;
     z-index: 1;
     margin-right: auto;
@@ -110,7 +110,7 @@ div {
     position: relative;
     top: 20px;
     margin: 0 auto;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -469,4 +469,48 @@ span {
     color: white;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    
+}
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width:fit-content;
+        padding-right: 1rem;
+    }
+ 
+    #menu {
+        display: flex;
+    }
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    }
+@media screen and (max-width: 900px) {
+    header {
+        max-width: 100%;
+    }
+    menu {
+        max-width: 100%;
+    }
+    #tea-image {
+        max-width: 30vw;
+        height: 95%;
+        grid-template-rows: auto;
+        justify-self: center;
+    }
+    body {
+        max-width: 100%;
+    }
+    .benefits {
+        grid-template-rows: auto;
+        justify-self: start;
+    }
+}
  
