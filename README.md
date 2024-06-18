@@ -58,7 +58,7 @@
 - Accessibility
 ### I confirmed that the colors and fonts chosen are easy to read and accesible by running it throught lighthouse in devtools
 <details>
-<p align="center"><img src="" width="600">
+<p align="center"><img src="assets/images/lighthouse.jpg" width="600">
 </details>
 
 **Deployment**
